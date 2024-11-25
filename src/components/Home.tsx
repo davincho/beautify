@@ -77,7 +77,7 @@ export function Home() {
             🦄
           </h1>
 
-          <p className="text-slate-400 mt-2">
+          <p className="text-slate-600 mt-2">
             Paste your code, format it, and share the URL with others.
           </p>
         </header>

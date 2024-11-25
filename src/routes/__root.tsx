@@ -13,13 +13,6 @@ export const Route = createRootRoute({
             >
               Beautifier 🦄
             </Link>
-            <Link
-              to="/about"
-              className="hover:text-slate-300 transition-colors"
-              activeProps={{ className: "text-sky-400" }}
-            >
-              About
-            </Link>
           </div>
         </nav>
       </header>
@@ -28,7 +21,7 @@ export const Route = createRootRoute({
         <Outlet />
       </main>
 
-      <footer className="bg-slate-100">
+      <footer className="bg-slate-100 border-t border-slate-200 shadow-[0_-1px_2px_rgba(0,0,0,0.1)]">
         <div className="max-w-7xl mx-auto px-4 py-4 text-center text-sm text-slate-600">
           © {new Date().getFullYear()} Beautify 🦄 - Developed with ❤️ in
           Vienna, AT -{" "}

@@ -31,7 +31,10 @@ export const Route = createRootRoute({
       <footer className="bg-slate-100">
         <div className="max-w-7xl mx-auto px-4 py-4 text-center text-sm text-slate-600">
           © {new Date().getFullYear()} Beautify 🦄 - Developed with ❤️ in
-          Vienna, AT - GitHub
+          Vienna, AT -{" "}
+          <a href="https://github.com/davincho/beautify" target="_blank">
+            GitHub
+          </a>
         </div>
       </footer>
     </div>

@@ -4,5 +4,14 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-typewriter")({
+      wordsets: {
+        texts: {
+          words: ["JSON", "JSX", "Typescript", "Javascript", "Markdown"],
+          pauseBetween: 2,
+        },
+      },
+    }),
+  ],
 };

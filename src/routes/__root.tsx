@@ -1,31 +1,21 @@
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
+import { createRootRoute, Outlet, Link } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
   component: () => (
-    <div className="h-screen flex flex-col fixed inset-0">
-      <header className="bg-slate-800 text-white">
-        <nav className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex gap-6">
-            <Link
-              to="/"
-              className="hover:text-slate-300 transition-colors"
-              activeProps={{ className: "text-sky-400" }}
-            >
-              Beautifier 🦄
-            </Link>
-          </div>
-        </nav>
-      </header>
-
-      <main className="flex-1 mx-auto w-full overflow-y-auto">
+    <div className="h-screen flex flex-col fixed inset-0 bg-gradient-to-b from-slate-300 to-slate-200 text-white">
+      <main className="flex-1 mx-auto w-full overflow-y-auto p-4">
         <Outlet />
       </main>
 
-      <footer className="bg-slate-100 border-t border-slate-200 shadow-[0_-1px_2px_rgba(0,0,0,0.1)]">
-        <div className="max-w-7xl mx-auto px-4 py-4 text-center text-sm text-slate-600">
-          © {new Date().getFullYear()} Beautify 🦄 - Developed with ❤️ in
-          Vienna, AT -{" "}
-          <a href="https://github.com/davincho/beautify" target="_blank">
+      <footer className="bg-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 py-4 text-center text-sm">
+          © {new Date().getFullYear()} {""}
+          <Link to="/">BeautifyMe 🦄</Link> - Developed with ❤️ in Vienna, AT -{" "}
+          <a
+            href="https://github.com/davincho/beautify"
+            target="_blank"
+            className="underline underline-offset-2"
+          >
             GitHub
           </a>
         </div>
